@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SKR | GLOBAL NODES & CONNECTIVITY</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Rajdhani:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root { --gold: #D4AF37; --bg: #030303; --neon-green: #39ff14; }
+        body { background: var(--bg); color: white; font-family: 'Rajdhani', sans-serif; margin: 0; }
+
+        .map-header {
+            padding: 100px 5%; text-align: center;
+            background: radial-gradient(circle, #1a1a1a 0%, #030303 100%);
+            border-bottom: 1px solid #222;
+        }
+
+        .node-grid {
+            display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px; padding: 50px 8%;
+        }
+
+        .node-card {
+            background: #0a0a0a; border: 1px solid #222; padding: 30px;
+            position: relative; overflow: hidden; transition: 0.3s;
+        }
+
+        .node-card:hover { border-color: var(--neon-green); box-shadow: 0 0 20px rgba(57, 255, 20, 0.1); }
+
+        .node-status {
+            position: absolute; top: 10px; right: 10px;
+            font-size: 0.6rem; color: var(--neon-green); font-family: 'Orbitron';
+        }
+
+        h3 { font-family: 'Orbitron'; color: var(--gold); margin-top: 0; }
+
+        .connection-link {
+            display: block; margin-top: 20px; color: white; text-decoration: none;
+            font-weight: bold; border: 1px solid #333; padding: 10px; text-align: center;
+        }
+
+        .connection-link:hover { background: white; color: black; }
+
+        /* World Signal Animation */
+        .signal-bar { height: 4px; width: 100%; background: #111; margin-top: 10px; position: relative; }
+        .signal-fill { height: 100%; background: var(--neon-green); width: 85%; animation: flicker 2s infinite; }
+        @keyframes flicker { 0% { opacity: 1; } 50% { opacity: 0.4; } 100% { opacity: 1; } }
+    </style>
+</head>
+<body>
+
+<section class="map-header">
+    <h1 style="font-family: 'Orbitron'; font-size: 3rem; margin: 0;">GLOBAL NODES</h1>
+    <p style="color: var(--gold); letter-spacing: 5px;">DISTRIBUTED NETWORK OF SOUND</p>
+</section>
+
+<main class="node-grid">
+    <div class="node-card">
+        <div class="node-status">● ENCRYPTED_STABLE</div>
+        <h3>PHL_SECTOR [HQ]</h3>
+        <p>Primary Data Ingestion & Executive Management.</p>
+        <div class="signal-bar"><div class="signal-fill" style="width: 100%;"></div></div>
+        <p style="font-size: 0.8rem; color: #555; margin-top: 15px;">PHILADELPHIA, PA, USA</p>
+    </div>
+
+    <div class="node-card">
+        <div class="node-status">● BROADCASTING</div>
+        <h3>IHEARTRADIO_NODE</h3>
+        <p>Official 24/7 Portal for Global Broadcast Distribution.</p>
+        <a href="#" class="connection-link">ACCESS PORTAL</a>
+    </div>
+
+    <div class="node-card">
+        <div class="node-status">● ACTIVE</div>
+        <h3>AMAZON_MARKETPLACE</h3>
+        <p>Global fulfillment for SKR physical assets & merch.</p>
+        <a href="#" class="connection-link">VIEW STORE</a>
+    </div>
+
+    <div class="node-card">
+        <div class="node-status">● STABLE</div>
+        <h3>LDN_SECTOR</h3>
+        <p>European R&B / Urban Soul Hub (YungBro Node).</p>
+        <div class="signal-bar"><div class="signal-fill" style="width: 92%;"></div></div>
+        <p style="font-size: 0.8rem; color: #555; margin-top: 15px;">LONDON, UK</p>
+    </div>
+
+    <div class="node-card">
+        <div class="node-status">● STABLE</div>
+        <h3>BER_SECTOR</h3>
+        <p>Industrial & Electronic Neural Synthesis (RDA Node).</p>
+        <div class="signal-bar"><div class="signal-fill" style="width: 88%;"></div></div>
+        <p style="font-size: 0.8rem; color: #555; margin-top: 15px;">BERLIN, GERMANY</p>
+    </div>
+
+    <div class="node-card">
+        <div class="node-status">● SYNCING</div>
+        <h3>NEURAL_CLOUD</h3>
+        <p>Storage for SKR Sonic ID & Verification Assets.</p>
+        <div class="signal-bar"><div class="signal-fill" style="width: 75%;"></div></div>
+    </div>
+</main>
+
+<footer style="text-align: center; padding: 40px; color: #333; font-size: 0.7rem; letter-spacing: 2px;">
+    SYSTEM COORDINATES: 39.9526° N, 75.1652° W | SOLOMON KIN RECORDS MUSIC GROUP, INC.
+</footer>
+
+</body>
+</html>
